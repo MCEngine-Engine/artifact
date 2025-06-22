@@ -1,3 +1,5 @@
+[![bStats](https://raw.githubusercontent.com/intergrav/devins-badges/refs/heads/v3/assets/cozy/available/bstats_vector.svg)](https://bstats.org/plugin/bukkit/MCEngineArtifact/22576)
+
 # ℹ️ Project Information
 
 This project is created to add more artifact items through add-ons, DLCs, and other plugins. 🧩✨
