@@ -1,0 +1,6 @@
+name: MCEngineArtifact
+version: ${version}
+main: io.github.mcengine.spigotmc.artifact.engine.MCEngineArtifactSpigotMC
+author: MCEngine
+description: MCEngine Artifact
+api-version: 1.13
