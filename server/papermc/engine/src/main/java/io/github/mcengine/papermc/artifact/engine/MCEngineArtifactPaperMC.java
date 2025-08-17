@@ -1,7 +1,7 @@
 package io.github.mcengine.papermc.artifact.engine;
 
-import io.github.mcengine.api.mcengine.MCEngineApi;
-import io.github.mcengine.api.mcengine.Metrics;
+import io.github.mcengine.api.core.MCEngineCoreApi;
+import io.github.mcengine.api.core.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class MCEngineArtifactPaperMC extends JavaPlugin {
@@ -22,20 +22,20 @@ public class MCEngineArtifactPaperMC extends JavaPlugin {
         }
 
         // Load extensions
-        MCEngineApi.loadExtensions(
+        MCEngineCoreApi.loadExtensions(
             this,
             "io.github.mcengine.api.artifact.addon.IMCEngineArtifactAddOn",
             "addons",
             "AddOn"
             );
-        MCEngineApi.loadExtensions(
+        MCEngineCoreApi.loadExtensions(
             this,
             "io.github.mcengine.api.artifact.dlc.IMCEngineArtifactDLC",
             "dlcs",
             "DLC"
             );
 
-        MCEngineApi.checkUpdate(this, getLogger(), "github", "MCEngine", "artifact-engine", getConfig().getString("github.token", "null"));
+        MCEngineCoreApi.checkUpdate(this, getLogger(), "github", "MCEngine-Engine", "artifact", getConfig().getString("github.token", "null"));
     }
 
     /**
